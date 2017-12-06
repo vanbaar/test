@@ -1,0 +1,92 @@
+{
+	"info": {
+		"name": "arne_postman_uitprobeersel",
+		"_postman_id": "22237dbe-8d5e-1e77-f914-ee798d7ea95f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "arne-correct",
+			"description": "",
+			"item": [
+				{
+					"name": "Arne postman test",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a66ec00c-9e8e-4de9-9795-31f93b8551e3",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"tests[\"Unieke waarde 1 TODO code=BVM006\"] = jsonData.uniqueCodes[0] === \"BVM006\";"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://t-apollo-lonen-back.global.dns/apollo-lonen-app/v1/todo/uniqueValues?",
+							"protocol": "http",
+							"host": [
+								"t-apollo-lonen-back",
+								"global",
+								"dns"
+							],
+							"path": [
+								"apollo-lonen-app",
+								"v1",
+								"todo",
+								"uniqueValues"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Arne postman test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a66ec00c-9e8e-4de9-9795-31f93b8551e3",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"Unieke waarde 1 TODO code=BVM006\"] = jsonData.uniqueCodes[0] === \"BVM006\";"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://t-apollo-lonen-back.global.dns/apollo-lonen-app/v1/todo/uniqueValues?",
+					"protocol": "http",
+					"host": [
+						"t-apollo-lonen-back",
+						"global",
+						"dns"
+					],
+					"path": [
+						"apollo-lonen-app",
+						"v1",
+						"todo",
+						"uniqueValues"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
